@@ -1,0 +1,2 @@
+Run with HelloWorld example using:
+mvn -q scala:run -DmainClass=com.fewerhassles.indyscala.HelloWorld
