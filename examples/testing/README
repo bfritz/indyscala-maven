@@ -1,0 +1,10 @@
+Heavily inspired by this blog post:
+http://drosth.blogspot.com/2012/03/test-driven-development-with-scala-and.html
+from Hans Drost.
+
+Start continuous testing with:
+
+  mvn scala:cctest
+
+The scala-maven-plugin will watch for changed *Scala* files
+and re-compile and re-run the tests after changes.
