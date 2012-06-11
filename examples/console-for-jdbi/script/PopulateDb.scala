@@ -1,0 +1,25 @@
+import org.skife.jdbi.v2.DBI
+import org.skife.jdbi.v2.Handle
+
+val db_user = "sa"
+val db_pass = ""
+
+Class.forName("org.h2.Driver")
+
+val dbi = new DBI("jdbc:h2:~/projects/indyscala/maven/test", db_user, db_pass)
+val h = dbi.open
+
+
+h.execute("""
+    create table example (
+      id int primary key,
+      name varchar(50),
+      description varchar(200)
+    )""")
+
+h.execute("""
+    insert into example values (1, 'simple', 'Minimum viable scala-maven-plugin project')""")
+
+h.execute("""
+    insert into example values (2, 'console-for-jdbi ', 'jDBI project to demo scala:console')""")
+

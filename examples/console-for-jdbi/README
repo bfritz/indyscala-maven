@@ -1,0 +1,8 @@
+Use jDBI from console with:
+
+  mvn scala:console
+
+  scala> :load script/GetDbHandle.scala
+  scala> :load script/PopulateDb.scala
+  scala> :load script/QueryDb.scala
+
