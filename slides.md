@@ -53,7 +53,7 @@ If you...
   Displays the command line being run for the goal.
 * In `3.1.0-SNAPSHOT` there is integration with the SBT
   incremental compiler thanks to Peter Vlugter at Typesafe.<br/>
-  Enable it with `-DrecompileMode=true` or in the POM.
+  Enable it with `-DrecompileMode=incremental` or in the POM.
 
 ---
 
